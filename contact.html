@@ -1,0 +1,107 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	
+
+
+    <title>Contact</title>
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+form {
+    flex: 1; 
+    max-width: 600px;
+    margin: 20px auto;
+}
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            flex: 1;
+            margin-right: 10px; 
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+        <header>
+        <h1>Aleksandar Gjorgjiev - Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <form>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name and surname">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age">
+            </div>
+
+            <div class="form-group">
+                <label for="town">Town</label>
+                <input type="text" id="town" name="town" placeholder="Enter your town">
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+	
+	   <footer>
+        <p>&copy; 2023 Code Master. All rights reserved.</p>
+    </footer>
+	
+</body>
+</html>
